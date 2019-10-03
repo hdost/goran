@@ -1,0 +1,12 @@
+go:
+    # Whenever the Go version is updated here, .travis.yml and
+    # .circle/config.yml should also be updated.
+    version: 1.12
+repository:
+    path: github.com/hdost/goran
+build:
+    binaries:
+        - name: goran
+          path: ./cmd/goran
+        - name: goran-follower
+          path: ./cmd/goran-follower
